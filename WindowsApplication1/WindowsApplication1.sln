@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WindowsApplication1", "WindowsApplication1\WindowsApplication1.vbproj", "{AE90326B-2E8D-4EAC-BFAE-51E689745BF4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{65CA2BD1-0754-4B87-9330-B3B4FA02D8DA}"
+	ProjectSection(SolutionItems) = preProject
+		ResTempl1.rct = ResTempl1.rct
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE90326B-2E8D-4EAC-BFAE-51E689745BF4}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{AE90326B-2E8D-4EAC-BFAE-51E689745BF4}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{AE90326B-2E8D-4EAC-BFAE-51E689745BF4}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{AE90326B-2E8D-4EAC-BFAE-51E689745BF4}.Debug|x86.ActiveCfg = Debug|x86
+		{AE90326B-2E8D-4EAC-BFAE-51E689745BF4}.Debug|x86.Build.0 = Debug|x86
+		{AE90326B-2E8D-4EAC-BFAE-51E689745BF4}.Release|Any CPU.ActiveCfg = Release|x86
+		{AE90326B-2E8D-4EAC-BFAE-51E689745BF4}.Release|Any CPU.Build.0 = Release|x86
+		{AE90326B-2E8D-4EAC-BFAE-51E689745BF4}.Release|Any CPU.Deploy.0 = Release|x86
+		{AE90326B-2E8D-4EAC-BFAE-51E689745BF4}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{AE90326B-2E8D-4EAC-BFAE-51E689745BF4}.Release|Mixed Platforms.Build.0 = Release|x86
+		{AE90326B-2E8D-4EAC-BFAE-51E689745BF4}.Release|x86.ActiveCfg = Release|x86
+		{AE90326B-2E8D-4EAC-BFAE-51E689745BF4}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+EndGlobal

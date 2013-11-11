@@ -1,0 +1,738 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AE90326B-2E8D-4EAC-BFAE-51E689745BF4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>G.P_Firmware_Downloader</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.1</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>G.P_Firmware_Downloader.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>G.P_Firmware_Downloader.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\1gi1front.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>CA5E5E0A12F4F7382CCB9CDE06331EAAF952A175</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>hsh97.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>hsh97.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>Internet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestTimestampUrl>http://timestamp.verisign.com/scripts/timstamp.dll</ManifestTimestampUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="gmswait, Version=1.0.0.1, Culture=neutral, PublicKeyToken=7c4b48696c5fb0b2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\Debug\gmswait.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="rebootoption, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7c4b48696c5fb0b2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ClassLibrary2\ClassLibrary2\bin\Debug\rebootoption.dll</HintPath>
+    </Reference>
+    <Reference Include="savereseource">
+      <HintPath>..\..\savereseource1\savereseource1\bin\Release\savereseource.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft.VisualBasic.FileIO" />
+    <Import Include="Microsoft.Win32" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing.Imaging" />
+    <Import Include="System.Media" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="WindowsApplication1" />
+    <Import Include="WindowsApplication1.My" />
+    <Import Include="WindowsApplication1.My.Resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.Designer.vb">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBox1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adbmain.Designer.vb">
+      <DependentUpon>adbmain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="adbmain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addcmd.Designer.vb">
+      <DependentUpon>addcmd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addcmd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Dialog1.Designer.vb">
+      <DependentUpon>Dialog1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dpi calculator.Designer.vb">
+      <DependentUpon>dpi calculator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dpi calculator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="etcfunction.Designer.vb">
+      <DependentUpon>etcfunction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="etcfunction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="godown.Designer.vb">
+      <DependentUpon>godown.vb</DependentUpon>
+    </Compile>
+    <Compile Include="godown.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inputpassword.Designer.vb">
+      <DependentUpon>inputpassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="inputpassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lc3fulldeodexed.Designer.vb">
+      <DependentUpon>lc3fulldeodexed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="lc3fulldeodexed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lc3rooting.Designer.vb">
+      <DependentUpon>lc3rooting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="lc3rooting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lc3stock.Designer.vb">
+      <DependentUpon>lc3stock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="lc3stock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ld1rooting_ndrive.Designer.vb">
+      <DependentUpon>ld1rooting_ndrive.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ld1rooting_ndrive.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ld2rootexker.Designer.vb">
+      <DependentUpon>ld2rootexker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ld2rootexker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ld2rootwithker.Designer.vb">
+      <DependentUpon>ld2rootwithker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ld2rootwithker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ld2stockecker.Designer.vb">
+      <DependentUpon>ld2stockecker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ld2stockecker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ld2stockwithker.Designer.vb">
+      <DependentUpon>ld2stockwithker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ld2stockwithker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ld2system.Designer.vb">
+      <DependentUpon>ld2system.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ld2system.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ld2커널제외루팅구글.Designer.vb">
+      <DependentUpon>ld2커널제외루팅구글.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ld2커널제외루팅구글.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ld2커널제외루팅네이버.Designer.vb">
+      <DependentUpon>ld2커널제외루팅네이버.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ld2커널제외루팅네이버.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ld2커널제외순정구글.Designer.vb">
+      <DependentUpon>ld2커널제외순정구글.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ld2커널제외순정구글.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ld2커널제외순정네이버.Designer.vb">
+      <DependentUpon>ld2커널제외순정네이버.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ld2커널제외순정네이버.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ld2커널포함루팅구글.Designer.vb">
+      <DependentUpon>ld2커널포함루팅구글.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ld2커널포함루팅구글.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LD2커널포함루팅네이버.Designer.vb">
+      <DependentUpon>LD2커널포함루팅네이버.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LD2커널포함루팅네이버.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ld2커널포함순정구글.Designer.vb">
+      <DependentUpon>ld2커널포함순정구글.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ld2커널포함순정구글.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ld2커널포함순정네이버.Designer.vb">
+      <DependentUpon>ld2커널포함순정네이버.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ld2커널포함순정네이버.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lh2_stock.Designer.vb">
+      <DependentUpon>lh2_stock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="lh2_stock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lh4choose.Designer.vb">
+      <DependentUpon>lh4choose.vb</DependentUpon>
+    </Compile>
+    <Compile Include="lh4choose.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lh4origin.Designer.vb">
+      <DependentUpon>lh4origin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="lh4origin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lh4rooting.Designer.vb">
+      <DependentUpon>lh4rooting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="lh4rooting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lh4rooting_google.Designer.vb">
+      <DependentUpon>lh4rooting_google.vb</DependentUpon>
+    </Compile>
+    <Compile Include="lh4rooting_google.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lh4rooting_ndrive.Designer.vb">
+      <DependentUpon>lh4rooting_ndrive.vb</DependentUpon>
+    </Compile>
+    <Compile Include="lh4rooting_ndrive.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="localdown.Designer.vb">
+      <DependentUpon>localdown.vb</DependentUpon>
+    </Compile>
+    <Compile Include="localdown.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="normal_shutdown_reservation.Designer.vb">
+      <DependentUpon>normal_shutdown_reservation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="normal_shutdown_reservation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="odinallversion.Designer.vb">
+      <DependentUpon>odinallversion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="odinallversion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="odinnowrun.Designer.vb">
+      <DependentUpon>odinnowrun.vb</DependentUpon>
+    </Compile>
+    <Compile Include="odinnowrun.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pleasewait.Designer.vb">
+      <DependentUpon>pleasewait.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pleasewait.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="shutdown_reservation.Designer.vb">
+      <DependentUpon>shutdown_reservation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="shutdown_reservation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="startmenu.Designer.vb">
+      <DependentUpon>startmenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="startmenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="syteminfo.Designer.vb">
+      <DependentUpon>syteminfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="syteminfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateform.Designer.vb">
+      <DependentUpon>updateform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="updateform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.vb">
+      <DependentUpon>UserControl1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="xxlc3choose.Designer.vb">
+      <DependentUpon>xxlc3choose.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xxlc3choose.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="갤플3.6 펌웨어.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="갤플3.6 펌웨어.Designer.vb">
+      <DependentUpon>갤플3.6 펌웨어.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ld1original.Designer.vb">
+      <DependentUpon>ld1original.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ld1original.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ld1rooting.Designer.vb">
+      <DependentUpon>ld1rooting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ld1rooting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="갤플4.2펌웨어.Designer.vb">
+      <DependentUpon>갤플4.2펌웨어.vb</DependentUpon>
+    </Compile>
+    <Compile Include="갤플4.2펌웨어.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="갤플42krld2choose.Designer.vb">
+      <DependentUpon>갤플42krld2choose.vb</DependentUpon>
+    </Compile>
+    <Compile Include="갤플42krld2choose.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="갤플70+.Designer.vb">
+      <DependentUpon>갤플70+.vb</DependentUpon>
+    </Compile>
+    <Compile Include="갤플70+.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adbmain.resx">
+      <DependentUpon>adbmain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addcmd.resx">
+      <DependentUpon>addcmd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog1.resx">
+      <DependentUpon>Dialog1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dpi calculator.resx">
+      <DependentUpon>dpi calculator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="etcfunction.resx">
+      <DependentUpon>etcfunction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="godown.resx">
+      <DependentUpon>godown.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inputpassword.resx">
+      <DependentUpon>inputpassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lc3fulldeodexed.resx">
+      <DependentUpon>lc3fulldeodexed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lc3rooting.resx">
+      <DependentUpon>lc3rooting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lc3stock.resx">
+      <DependentUpon>lc3stock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ld1rooting_ndrive.resx">
+      <DependentUpon>ld1rooting_ndrive.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ld2rootexker.resx">
+      <DependentUpon>ld2rootexker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ld2rootwithker.resx">
+      <DependentUpon>ld2rootwithker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ld2stockecker.resx">
+      <DependentUpon>ld2stockecker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ld2stockwithker.resx">
+      <DependentUpon>ld2stockwithker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ld2system.resx">
+      <DependentUpon>ld2system.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ld2커널제외루팅구글.resx">
+      <DependentUpon>ld2커널제외루팅구글.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ld2커널제외루팅네이버.resx">
+      <DependentUpon>ld2커널제외루팅네이버.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ld2커널제외순정구글.resx">
+      <DependentUpon>ld2커널제외순정구글.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ld2커널제외순정네이버.resx">
+      <DependentUpon>ld2커널제외순정네이버.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ld2커널포함루팅구글.resx">
+      <DependentUpon>ld2커널포함루팅구글.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LD2커널포함루팅네이버.resx">
+      <DependentUpon>LD2커널포함루팅네이버.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ld2커널포함순정구글.resx">
+      <DependentUpon>ld2커널포함순정구글.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ld2커널포함순정네이버.resx">
+      <DependentUpon>ld2커널포함순정네이버.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lh2_stock.resx">
+      <DependentUpon>lh2_stock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lh4choose.resx">
+      <DependentUpon>lh4choose.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lh4origin.resx">
+      <DependentUpon>lh4origin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lh4rooting.resx">
+      <DependentUpon>lh4rooting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lh4rooting_google.resx">
+      <DependentUpon>lh4rooting_google.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lh4rooting_ndrive.resx">
+      <DependentUpon>lh4rooting_ndrive.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="localdown.resx">
+      <DependentUpon>localdown.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="normal_shutdown_reservation.resx">
+      <DependentUpon>normal_shutdown_reservation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="odinallversion.resx">
+      <DependentUpon>odinallversion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="odinnowrun.resx">
+      <DependentUpon>odinnowrun.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pleasewait.resx">
+      <DependentUpon>pleasewait.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shutdown_reservation.resx">
+      <DependentUpon>shutdown_reservation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="startmenu.resx">
+      <DependentUpon>startmenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="syteminfo.resx">
+      <DependentUpon>syteminfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateform.resx">
+      <DependentUpon>updateform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xxlc3choose.resx">
+      <DependentUpon>xxlc3choose.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="갤플3.6 펌웨어.resx">
+      <DependentUpon>갤플3.6 펌웨어.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ld1original.resx">
+      <DependentUpon>ld1original.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ld1rooting.resx">
+      <DependentUpon>ld1rooting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="갤플4.2펌웨어.resx">
+      <DependentUpon>갤플4.2펌웨어.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="갤플42krld2choose.resx">
+      <DependentUpon>갤플42krld2choose.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="갤플70+.resx">
+      <DependentUpon>갤플70+.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="app1.config" />
+    <None Include="atest.snk" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="hsh97.pfx" />
+    <None Include="My Project\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="mycert1.pfx" />
+    <None Include="packages.config" />
+    <None Include="Resources\Odin3-v1.85.zip" />
+    <None Include="Resources\Odin3.07.7z" />
+    <None Include="Resources\Odin3_v3.04.7z" />
+    <None Include="Resources\odin3_v3.04_kor.zip" />
+    <None Include="TESTKEY1.pfx" />
+    <None Include="WindowsApplication1_1_TemporaryKey.pfx" />
+    <None Include="WindowsApplication1_2_TemporaryKey.pfx" />
+    <None Include="WindowsApplication1_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4%28x86 및 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,KB2468871">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4%28x86 및 x64%29 및 .NET Framework 4용 업데이트%28KB2468871%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile%28x86 및 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5%28x86 및 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dddㅋd.ico" />
+    <None Include="Resources\gs1_32x32.ico" />
+    <None Include="Resources\gi1_32x32.ico" />
+    <None Include="Resources\70d.ico" />
+    <None Include="Resources\70d.png" />
+    <None Include="Resources\ad.ico" />
+    <None Include="Resources\332.gif" />
+    <None Include="Resources\332 %281%29.gif" />
+    <None Include="Resources\301.gif" />
+    <None Include="Resources\294.gif" />
+    <None Include="Resources\294 %281%29.gif" />
+    <None Include="Resources\블로그로고.png" />
+    <None Include="Resources\블로그로고.jpg" />
+    <None Include="Resources\블로그로고.bmp" />
+    <None Include="Resources\_ddddd.ico" />
+    <None Include="Resources\1gi1front.ico" />
+    <None Include="Resources\13492364188.gif" />
+    <None Include="Resources\갤플로고.jpg" />
+    <None Include="Resources\logo.jpg" />
+    <EmbeddedResource Include="Resources\cmd.exe">
+      <CustomToolNamespace>cmd</CustomToolNamespace>
+    </EmbeddedResource>
+    <None Include="Resources\adb.exe" />
+    <EmbeddedResource Include="Resources\AdbWinUsbApi.dll" />
+    <EmbeddedResource Include="Resources\AdbWinApi.dll" />
+    <EmbeddedResource Include="Resources\akosa.png">
+      <CustomToolNamespace>akosa</CustomToolNamespace>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WinHttp">
+      <Guid>{662901FC-6951-4854-9EB2-D9A2570F2B2E}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
